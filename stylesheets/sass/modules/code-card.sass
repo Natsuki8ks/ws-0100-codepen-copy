@@ -1,0 +1,80 @@
+.hero-body-image
+  box-sizing: border-box
+  width: 50%
+  float: left
+
+  .hero-body-image-card
+    margin: 16px 
+    border-radius: 6px
+    width: 495px
+    height: 410px
+    // background: linear-gradient(109.61deg, #4c4f5a 4.26%, #202125 84.84%
+    background-color: #4c4f5a
+
+   
+
+
+@mixin codecard
+  .code-card-header
+    font-size: 13px
+    font-weight: 400
+    padding: 4px 8px
+    height: 20px
+    .fa
+      display: inline-block
+      font-size: inherit
+      opacity: 0.6
+    .code-card-title-text
+      padding: 0 0 0 8px
+      font-size: 13px
+    
+  .code-card-body
+    padding: 0 8px 8px 8px
+    p
+      margin-top: 0
+      margin-bottom: 0
+   
+
+
+.code-card
+  @include codecard
+  box-sizing: border-box
+  margin-bottom: 8px
+  background-color: #1d1e22
+  border-radius: 6px
+  width: 300px
+  height: 140px
+  font-size: 13px
+  // card's psition↓
+  position: relative
+  bottom: 20px
+
+  
+
+
+.code-card-html
+  left: 160px
+
+.code-card-scss
+  left: 220px
+  
+.code-card-js
+  left: 160px
+
+      
+
+
+.hilight-orange
+  color: #a88038
+.hilight-beige
+  color: #e1ca72
+.hilight-green
+  color: #74b087
+.hilight-blue
+  color: #7a99ad
+
+
+.l-margin-left-2rem
+  margin-left: 2rem
+.l-margin-left-4rem
+  margin-left: 4rem

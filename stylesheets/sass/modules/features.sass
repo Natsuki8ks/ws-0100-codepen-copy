@@ -1,0 +1,43 @@
+@mixin f-card
+  .card-icon
+    background: black
+    position: relative
+    left: 16px
+    top: 32px
+    height: 64px
+    width: 64px
+    border-radius: 6px
+    text-align: center
+    .fa
+      font-size: 48px
+      position: relative
+      top: 8px
+
+  .card
+    padding: 2rem  
+    width: 360px
+    border-radius: 6px
+    background: #2c303a
+    .card-title
+      font-size: 15px
+    .card-description
+      color: #b7bbc8
+      span
+        color: #0ebeff
+        font-weight: bold
+    .card-footer
+      margin: 16px 0
+      .button
+        display: inline-block
+        padding: 8px 16px
+        background-color: #444857
+        border-radius: 4px
+        &:hover
+          opacity: 0.5
+          
+  
+  
+  
+.features-card
+  margin: 30px 15px
+  @include f-card
