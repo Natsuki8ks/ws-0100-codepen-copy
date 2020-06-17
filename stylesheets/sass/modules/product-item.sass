@@ -1,6 +1,7 @@
 .product-item
   margin: 2rem 1rem
   width: 360px
+
   .product-message
     color: #ffffff
     .product-message-body
@@ -10,6 +11,59 @@
       .text-accent
         color: #0ebeff
 // sidebar...
+
+
+.product-items
+  margin: 2rem 1rem
+  width: 360px
+  .product-item-card
+    border-radius: 4px
+    background: #2c303a
+    transition: .2s
+    object-fit: contain
+    &:hover
+      border-radius: 4px
+      background: #2c303a
+      transition: 0.2s
+      transform: scale(1.05)
+      opacity: 0.4
+      cursor: pointer
+
+    .product-item-card-image
+      img
+        width: 350px
+        border-radius: 4px
+        margin: auto
+        padding: 8px
+
+    .product-item-card-body
+      padding: 16px
+      padding-top: 0
+      display: flex
+      .product-item-card-body-avator
+        width: 40px
+        height: 40px
+        img
+          width: 100%
+          border-radius: 4px
+      .product-item-card-body-title
+        margin-left: 16px
+        .product-item-card-body-title-text
+          margin: 0
+        p
+          color: #b7bbc8
+          margin: 0
+          // sidebar  
+
+    .product-item-card-footer
+      padding: 8px 16px
+      .l-flex
+        .product-item-card-footer-card 
+          background: black
+          border-radius: 4px
+          margin-right: 7px
+          padding: 2px 4px
+
 
 
 

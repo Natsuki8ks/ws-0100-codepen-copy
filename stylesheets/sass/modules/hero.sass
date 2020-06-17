@@ -1,14 +1,15 @@
 .hero-body
-  display: block
+  display: flex
+  flex-wrap: wrap
   .hero-body-description
-    box-sizing: border-box
     padding: 32px
     width: 50%
-    float: left
+    // display: block
+    // float: left
         
 
     .hero-body-description-content
-
+      
       .hero-logo
         font-size: 36px
         height: 54px
@@ -27,13 +28,14 @@
         line-height: 24.75px
         text-align: left
 
-        span
-
 
     .hero-footer
-        display: block
+      font-size: 1.4em
+      .button-primary
         width: 200px
-
+        border: 0
+        background: #47cf73
+        color: black
 
 
   .button
@@ -41,8 +43,6 @@
     cursor: pointer
     padding: 8px 16px
     border-radius: 4px
-    
-
     &:hover
       opacity: 0.5                
 
@@ -51,4 +51,3 @@
     background: #47cf73
     color: black
    
-      

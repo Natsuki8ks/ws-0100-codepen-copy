@@ -1,18 +1,13 @@
 .hero-body-image
-  box-sizing: border-box
   width: 50%
-  float: left
-
   .hero-body-image-card
-    margin: 16px 
+    margin: 16px auto
     border-radius: 6px
     width: 495px
     height: 410px
-    // background: linear-gradient(109.61deg, #4c4f5a 4.26%, #202125 84.84%
-    background-color: #4c4f5a
+    background: linear-gradient(109.61deg, #4c4f5a 4.26%, #202125 84.84%)
 
    
-
 
 @mixin codecard
   .code-card-header
@@ -24,22 +19,31 @@
       display: inline-block
       font-size: inherit
       opacity: 0.6
+      // font: normal normal normal 14px/1 FontAwesome
+      // text-rendering: auto
+      // -webkit-font-smoothing: antialiased
     .code-card-title-text
       padding: 0 0 0 8px
       font-size: 13px
+    .fa-chevron-down
+      position: absolute
+      top: 5%
+      right: 10px
+      width: 13px
+      
+
     
   .code-card-body
     padding: 0 8px 8px 8px
     p
       margin-top: 0
       margin-bottom: 0
-   
 
-
+  
 .code-card
   @include codecard
-  box-sizing: border-box
   margin-bottom: 8px
+  padding-top: 5px
   background-color: #1d1e22
   border-radius: 6px
   width: 300px
@@ -54,14 +58,10 @@
 
 .code-card-html
   left: 160px
-
 .code-card-scss
   left: 220px
-  
 .code-card-js
-  left: 160px
-
-      
+  left: 160px  
 
 
 .hilight-orange
@@ -78,3 +78,24 @@
   margin-left: 2rem
 .l-margin-left-4rem
   margin-left: 4rem
+
+
+.cursor
+  // animation: blink 1s infinite
+  animation-name: blink
+  animation-duration: 1s
+  animation-timing-function: ease
+  animation-delay: 0s
+  animation-iteration-count: infinite
+  animation-direction: normal
+  animation-fill-mode: none
+  animation-play-state: running
+
+@keyframes blink
+  0%
+    color: #000000
+  
+  100%
+    color: #FFF
+    font-weight: bold
+    
