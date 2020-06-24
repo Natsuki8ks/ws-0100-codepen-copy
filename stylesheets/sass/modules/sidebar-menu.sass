@@ -1,70 +1,29 @@
-@media (max-width: 576px)
-  .sidebar
+.sidebar
+  background: $weak-black
+  @include sm
     display: none
-
-
-  
-
-.codepen-logo
-  text-align: center
-    // mistook html
-
-  .fa-cube
-    display: inline-block
-    font: normal normal normal 14px/1 FontAwesome
-    font-size: inherit
-    text-rendering: auto
-    -webkit-font-smoothing: antialiased
-        
-
-.get-start
-  text-align: center
-  display: block
-  .button-logo
-    text-decoration: none
-  .get-start-text
-    margin: .2em
-    font-size: .8em
-    color: #b7bbc8
-
-
 .sidebar-menu
-  display: block
-  font-size: 15px
-  line-height: 22.5px
+  a
+    display: block
+    padding-left: 16px
+  a:hover
+    background: $black
+    //
 
 
-  .sidebar-menu-list
-    margin: 15px 0
-    list-style-type: none
-    padding: 0
+.sidebar-menu-title
+  font-size: .8rem
+  margin-bottom: .2rem
+  margin-left: 16px
 
+.sidebar-menu-list
 
-    .sidebar-menu-sub-list
-      margin-bottom: 16px
-      list-style-type: none
-      text-align: left
-      padding: 0px
+.sidebar-menu-sub-list
+  margin-bottom: 16px
 
-      .sidebar-menu-title
-        font-size: 12px
-        margin: 0 0 3px 16px
-
-      a
-        cursor: pointer
-        display: block
-        padding-left: 16px
-        &:hover
-          background-color: black  
-        
-
-        
-    
-    .text-weak
-      color: #b7bbc8
-      padding-left: 16px
-      display: block
-      &:hover
-        background-color: black
-        cursor: pointer
-
+.get-start-text
+  margin: .2em
+  font-size: .8em
+  text-align: center  
+  color: $lightgray
+  

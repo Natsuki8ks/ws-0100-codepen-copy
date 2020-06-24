@@ -1,38 +1,38 @@
+.hero
+  margin: 32px
 .hero-body
   display: flex
   flex-wrap: wrap
-  .hero-body-description
-    padding: 32px
-    width: 50%
-    // display: block
-    // float: left
-        
+.hero-logo
+  font-size: 36px
+.hero-body-description-title
+  margin: 0
+  font-size: 3rem
+  font-weight: 900
+.hero-body-description-text
+  font-size: 1.1rem
+.hero-body-description
+  width: 50%
+  padding: 32px
+  @include sm
+    width: 100%
 
-  
-    .hero-body-description-content
-      .hero-logo
-        font-size: 36px
-        height: 54px
+.hero-body-image
+  width: 50%
+  padding: 32px
+  @include sm
+    width: 100%
+.hero-body-image-card
+  margin: 16px auto
+  border-radius: 6px
+  width: 495px
+  height: 410px
+  @include sm
+    width: 100%
+  background: linear-gradient(109.61deg,#4c4f5a 4.26%,#202125 84.84%)
 
-      .hero-body-description-title
-        font-size: 3rem
-        font-weight: 900
-        line-height: 67.5px
-        margin: 0
+.hero-footer
+  .button
+    width: 200px
+    font-size: 1.4rem
 
-      .hero-body-description-text
-        margin: 16.5px 0
-        font-size: 1.1rem
-        font-weight: 500
-        line-height: 24.75px
-        text-align: left
-
-
-    .hero-footer
-      font-size: 1.4em
-      width: 200px
-      .button-primary
-        border: 0
-        background: #47cf73
-        color: black
-    

@@ -1,21 +1,16 @@
-@mixin footer-lines
+.footer
+  justify-content: space-between
+  align-items: center
+  padding: 32px
+  background: $black
+.footer-logo
+  font-size: 2rem
+.footer-links
   h4
-    margin: 2px 
+    margin: 2px
     margin-right: 1rem
   li
     margin-right: 1rem
-    color: #b7bbc8
-    list-style-type: none 
-    
-.l-align-center
-  @include footer-lines  
-
-  
-
-.footer-logo
-  font-size: 2rem
-
-.copy-right
   p
     margin: 15px 9
     color: #b7bbc8
